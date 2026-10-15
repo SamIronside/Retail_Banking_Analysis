@@ -25,22 +25,22 @@ These findings are drawn from the saved outputs in `notebooks/Analysis.ipynb`. T
 ## Selected visualisations
 
 ### Transaction volume by account type
-![Transaction volume by account type](assets/charts/transaction-volume-by-account-type.png)
+![Transaction volume by account type](banking_analyisis/assets/charts/transaction-volume-by-account-type.png)
 
 ### Monthly transaction volume
-![Monthly transaction volume](assets/charts/monthly-transaction-volume.png)
+![Monthly transaction volume](banking_analyisis/assets/charts/monthly-transaction-volume.png)
 
 ### Monthly transaction value
-![Monthly transaction value and rolling average](assets/charts/monthly-transaction-value.png)
+![Monthly transaction value and rolling average](banking_analyisis/assets/charts/monthly-transaction-value.png)
 
 ### Transaction volume by channel
-![Transaction volume by channel](assets/charts/transaction-volume-by-channel.png)
+![Transaction volume by channel](banking_analyisis/assets/charts/transaction-volume-by-channel.png)
 
 ### Transaction volume by day of week
-![Transaction volume by day of week](assets/charts/transaction-volume-by-weekday.png)
+![Transaction volume by day of week](banking_analyisis/assets/charts/transaction-volume-by-weekday.png)
 
 ### Customer account count and transaction volume
-![Number of accounts vs transaction volume](assets/charts/accounts-vs-transaction-volume.png)
+![Number of accounts vs transaction volume](banking_analyisis/assets/charts/accounts-vs-transaction-volume.png)
 
 More charts are available in the notebook, including top customers by transaction volume and average transaction activity by customer risk band.
 

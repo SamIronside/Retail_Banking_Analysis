@@ -58,9 +58,9 @@ banking-analysis/
 │       ├── merchants.parquet
 │       └── transactions.parquet
 ├── notebooks/
-│   └── Analysis.ipynb
+│   └── Analysis1.ipynb
 └── SQL/
-    └── Analysis.sql
+    └── Analysis1.sql
 ```
 
 - **`notebooks/Analysis.ipynb`** — data exploration, feature engineering, customer/account analysis, statistical summaries and visualisations.

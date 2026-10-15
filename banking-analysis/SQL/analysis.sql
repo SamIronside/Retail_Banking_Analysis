@@ -451,7 +451,7 @@ ORDER BY ab.reconstructed_balance ASC;
 
 
 -- ============================================================
--- Key analytical notes before visualisation
+-- Key notes
 -- ============================================================
 -- 1. Risk-band analysis compares transaction activity per customer
 --    against the overall customer benchmark.
@@ -462,6 +462,4 @@ ORDER BY ab.reconstructed_balance ASC;
 --
 -- 3. Reconstructed balances assume an opening balance of £0 because
 --    no opening balance is provided in the dataset.
---
--- 4. The SQL analysis is intended to be paired with the Pandas
---    analysis and visualisations in the portfolio project.
+

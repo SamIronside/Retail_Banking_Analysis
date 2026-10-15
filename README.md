@@ -60,7 +60,7 @@ banking-analysis/
 ├── notebooks/
 │   └── Analysis.ipynb
 └── SQL/
-    └── analysis_cleaned.sql
+    └── Analysis.sql
 ```
 
 - **`notebooks/Analysis.ipynb`** — data exploration, feature engineering, customer/account analysis, statistical summaries and visualisations.

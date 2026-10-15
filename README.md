@@ -1,26 +1,26 @@
 # Retail Banking Transaction Analysis
 
-An exploratory data analysis project examining transaction behaviour across customers, accounts, time periods, channels and merchant categories. The project uses **Python, Pandas, DuckDB, NumPy and[...] 
+An exploratory data analysis project examining transaction behaviour across customers, accounts, time periods, channels and merchant categories. The project uses **Python, Pandas, DuckDB, NumPy and SQL** to clean and aggregate banking-style data, investigate patterns and create visualisations.
 
 ## Research question
 
 **How do customer and account characteristics relate to banking transaction behaviour and value?**
 
-The analysis covers transaction distributions, customer activity, account types, time-based patterns, transaction channels, merchant categories, statistical relationships and reconstructed account [...]
+The analysis covers transaction distributions, customer activity, account types, time-based patterns, transaction channels, merchant categories, statistical relationships and reconstructed account balances.
 
 ## Key findings
 
 These findings are drawn from the saved outputs in `notebooks/Analysis.ipynb`. They describe this dataset and should not be generalised to real banking customers without further validation.
 
-- **Transaction amounts are strongly right-skewed.** Across 320,000 transactions, the mean amount is **201.92**, while the median is **28.02**. The 95th percentile is **1,540.00**, showing that a [...]
-- **December is the busiest month in both observed years.** The notebook records **18,296 transactions in December 2024** and **18,305 in December 2025**. Monthly totals should be interpreted in t[...]
+- **Transaction amounts are strongly right-skewed.** Across 320,000 transactions, the mean amount is **201.92**, while the median is **28.02**. The 95th percentile is **1,540.00**, showing that a relatively small number of large transactions pull the mean upward.
+- **December is the busiest month in both observed years.** The notebook records **18,296 transactions in December 2024** and **18,305 in December 2025**. Monthly totals should be interpreted in the context of the dataset's date coverage.
 - **Weekend activity is higher than weekday activity.** Saturday has **50,461 transactions** and Sunday has **50,274**, compared with roughly 43,500–44,400 on each weekday.
 - **Groceries is the most active merchant category.** It accounts for **45,782 transactions**, with a total transaction value of **2,239,891.22** in the dataset's amount units.
-- **Current accounts have the highest transaction volume by account type.** The notebook reports **153,937 transactions** associated with current accounts, followed by **99,692** for savings accou[...]
-- **Account count and transaction volume have a strong positive correlation** in the notebook's customer-level analysis (Pearson correlation **0.984**). This is an association, not evidence that h[...]
-- **Customer tenure has little linear relationship with transaction volume** in this analysis. The reported Pearson correlation is **0.039**, close to zero. This does not rule out nonlinear relati[...]
+- **Current accounts have the highest transaction volume by account type.** The notebook reports **153,937 transactions** associated with current accounts, followed by **99,692** for savings accounts, **43,648** for credit-card accounts and **22,723** for loan accounts.
+- **Account count and transaction volume have a strong positive correlation** in the notebook's customer-level analysis (Pearson correlation **0.984**). This is an association, not evidence that holding more accounts causes more transactions; the relationship may also be influenced by highly active customers and the distribution of account counts.
+- **Customer tenure has little linear relationship with transaction volume** in this analysis. The reported Pearson correlation is **0.039**, close to zero. This does not rule out nonlinear relationships or other factors.
 
-> **Data interpretation note:** The dataset includes accounts with different currency labels. Unless amounts are converted to a common basis, summed transaction values should be treated as dataset[...]
+> **Data interpretation note:** The dataset includes accounts with different currency labels. Unless amounts are converted to a common basis, summed transaction values should be treated as dataset amount units rather than directly comparable monetary totals. Standard-deviation-based outlier flags are screening tools, not evidence of fraud or customer risk.
 
 ## Selected visualisations
 
@@ -141,7 +141,7 @@ The notebook expects the Parquet files under `data/raw/`. If paths fail because 
 
 ### Run the SQL analysis
 
-The SQL file expects the referenced tables to be available to the SQL engine. With DuckDB, create or register views over the Parquet files before executing the queries. Check SQL dialect compatib[...]
+The SQL file expects the referenced tables to be available to the SQL engine. With DuckDB, create or register views over the Parquet files before executing the queries. Check SQL dialect compatibility if using another database engine.
 
 ## Limitations and interpretation
 

@@ -49,7 +49,7 @@ More charts are available in the notebook, including top customers by transactio
 ```text
 banking-analysis/
 ├── assets/
-│   └── charts/                 # Exported charts used in this README
+│   └── charts/                 
 ├── data/
 │   └── raw/
 │       ├── accounts.parquet
